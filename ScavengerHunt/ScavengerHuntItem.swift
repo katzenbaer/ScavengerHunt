@@ -9,7 +9,10 @@
 import Foundation
 import UIKit
 
-class ScavengerHuntItem: NSObject {
+class ScavengerHuntItem: NSObject, NSCoding {
+    
+    let NameKey = "NameKey"
+    let PhotoKey = "PhotoKey"
     
     let name: String
     var photo: UIImage?
@@ -21,6 +24,18 @@ class ScavengerHuntItem: NSObject {
     
     init(name: String) {
         self.name = name
+    }
+    
+    required init(coder aDecoder: NSCoder) {
+        name = aDecoder.decodeObjectForKey(NameKey) as String
+        photo = aDecoder.decodeObjectForKey(PhotoKey) as? UIImage
+    }
+    
+    func encodeWithCoder(aCoder: NSCoder) {
+        aCoder.encodeObject(name, forKey: NameKey)
+        if let thePhoto = photo {
+            aCoder.encodeObject(thePhoto, forKey: PhotoKey)
+        }
     }
     
 }

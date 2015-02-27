@@ -15,6 +15,7 @@
 		CD7C4FEE1A9FE84D00A80C4F /* ScavengerHuntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C4FED1A9FE84D00A80C4F /* ScavengerHuntTests.swift */; };
 		CD7C4FF81A9FF60F00A80C4F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C4FF71A9FF60F00A80C4F /* ListViewController.swift */; };
 		CD7C4FFC1AA0136E00A80C4F /* ScavengerHuntItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C4FFB1AA0136E00A80C4F /* ScavengerHuntItem.swift */; };
+		CD7C4FFE1AA02C7500A80C4F /* ItemsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C4FFD1AA02C7500A80C4F /* ItemsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		CD7C4FED1A9FE84D00A80C4F /* ScavengerHuntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScavengerHuntTests.swift; sourceTree = "<group>"; };
 		CD7C4FF71A9FF60F00A80C4F /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		CD7C4FFB1AA0136E00A80C4F /* ScavengerHuntItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScavengerHuntItem.swift; sourceTree = "<group>"; };
+		CD7C4FFD1AA02C7500A80C4F /* ItemsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				CD7C4FFB1AA0136E00A80C4F /* ScavengerHuntItem.swift */,
+				CD7C4FFD1AA02C7500A80C4F /* ItemsManager.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				CD7C4FD81A9FE84D00A80C4F /* AppDelegate.swift in Sources */,
 				CD7C4FFC1AA0136E00A80C4F /* ScavengerHuntItem.swift in Sources */,
 				CD7C4FF81A9FF60F00A80C4F /* ListViewController.swift in Sources */,
+				CD7C4FFE1AA02C7500A80C4F /* ItemsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
