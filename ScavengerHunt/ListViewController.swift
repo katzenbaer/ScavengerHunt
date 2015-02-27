@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ListViewController: UITableViewController {
+class ListViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     var itemsList: [ScavengerHuntItem] = [
         ScavengerHuntItem(name: "Cat"),
@@ -23,6 +23,14 @@ class ListViewController: UITableViewController {
         let item = itemsList[indexPath.row]
         
         cell.textLabel?.text = item.name
+        
+        if item.isComplete {
+            cell.accessoryType = .Checkmark
+            cell.imageView?.image = item.photo
+        } else {
+            cell.accessoryType = .None
+            cell.imageView?.image = nil
+        }
         
         return cell
     }
@@ -41,6 +49,32 @@ class ListViewController: UITableViewController {
                 tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
             }
         }
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let imagePicker = UIImagePickerController()
+        
+        if UIImagePickerController.isSourceTypeAvailable(.Camera) {
+            imagePicker.sourceType = .Camera
+        } else {
+            imagePicker.sourceType = .PhotoLibrary
+        }
+        
+        imagePicker.delegate = self
+        presentViewController(imagePicker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+        if let indexPath = tableView.indexPathForSelectedRow() {
+            let selectedItem = itemsList[indexPath.row]
+            let photo = info[UIImagePickerControllerOriginalImage] as UIImage
+            selectedItem.photo = photo
+            
+            dismissViewControllerAnimated(true, completion: {
+                self.tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+            })
+        }
+        
     }
     
 }
