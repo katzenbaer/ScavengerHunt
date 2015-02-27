@@ -11,11 +11,11 @@ import UIKit
 
 class ListViewController: UITableViewController {
     
-    var itemsList = ["Cat", "Dog", "Moose"]
+    var itemsList: [ScavengerHuntItem] = []
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ListViewCell", forIndexPath: indexPath) as UITableViewCell
-        cell.textLabel?.text = itemsList[indexPath.row]
+        cell.textLabel?.text = itemsList[indexPath.row].name
         
         return cell
     }

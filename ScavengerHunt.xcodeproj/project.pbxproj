@@ -14,6 +14,7 @@
 		CD7C4FE21A9FE84D00A80C4F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD7C4FE01A9FE84D00A80C4F /* LaunchScreen.xib */; };
 		CD7C4FEE1A9FE84D00A80C4F /* ScavengerHuntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C4FED1A9FE84D00A80C4F /* ScavengerHuntTests.swift */; };
 		CD7C4FF81A9FF60F00A80C4F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C4FF71A9FF60F00A80C4F /* ListViewController.swift */; };
+		CD7C4FFC1AA0136E00A80C4F /* ScavengerHuntItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C4FFB1AA0136E00A80C4F /* ScavengerHuntItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		CD7C4FEC1A9FE84D00A80C4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD7C4FED1A9FE84D00A80C4F /* ScavengerHuntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScavengerHuntTests.swift; sourceTree = "<group>"; };
 		CD7C4FF71A9FF60F00A80C4F /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		CD7C4FFB1AA0136E00A80C4F /* ScavengerHuntItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScavengerHuntItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		CD7C4FD41A9FE84D00A80C4F /* ScavengerHunt */ = {
 			isa = PBXGroup;
 			children = (
+				CD7C4FFA1AA0135600A80C4F /* Models */,
 				CD7C4FF91A9FF61D00A80C4F /* ViewControllers */,
 				CD7C4FD71A9FE84D00A80C4F /* AppDelegate.swift */,
 				CD7C4FD91A9FE84D00A80C4F /* AddViewController.swift */,
@@ -121,6 +124,14 @@
 				CD7C4FF71A9FF60F00A80C4F /* ListViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CD7C4FFA1AA0135600A80C4F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CD7C4FFB1AA0136E00A80C4F /* ScavengerHuntItem.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +236,7 @@
 			files = (
 				CD7C4FDA1A9FE84D00A80C4F /* AddViewController.swift in Sources */,
 				CD7C4FD81A9FE84D00A80C4F /* AppDelegate.swift in Sources */,
+				CD7C4FFC1AA0136E00A80C4F /* ScavengerHuntItem.swift in Sources */,
 				CD7C4FF81A9FF60F00A80C4F /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
