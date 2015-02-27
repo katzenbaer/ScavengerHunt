@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CD7C4FD81A9FE84D00A80C4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C4FD71A9FE84D00A80C4F /* AppDelegate.swift */; };
-		CD7C4FDA1A9FE84D00A80C4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C4FD91A9FE84D00A80C4F /* ViewController.swift */; };
+		CD7C4FDA1A9FE84D00A80C4F /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C4FD91A9FE84D00A80C4F /* AddViewController.swift */; };
 		CD7C4FDD1A9FE84D00A80C4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7C4FDB1A9FE84D00A80C4F /* Main.storyboard */; };
 		CD7C4FDF1A9FE84D00A80C4F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD7C4FDE1A9FE84D00A80C4F /* Images.xcassets */; };
 		CD7C4FE21A9FE84D00A80C4F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD7C4FE01A9FE84D00A80C4F /* LaunchScreen.xib */; };
@@ -30,7 +30,7 @@
 		CD7C4FD21A9FE84D00A80C4F /* ScavengerHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScavengerHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD7C4FD61A9FE84D00A80C4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD7C4FD71A9FE84D00A80C4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CD7C4FD91A9FE84D00A80C4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD7C4FD91A9FE84D00A80C4F /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		CD7C4FDC1A9FE84D00A80C4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD7C4FDE1A9FE84D00A80C4F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CD7C4FE11A9FE84D00A80C4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 			children = (
 				CD7C4FF91A9FF61D00A80C4F /* ViewControllers */,
 				CD7C4FD71A9FE84D00A80C4F /* AppDelegate.swift */,
-				CD7C4FD91A9FE84D00A80C4F /* ViewController.swift */,
+				CD7C4FD91A9FE84D00A80C4F /* AddViewController.swift */,
 				CD7C4FDB1A9FE84D00A80C4F /* Main.storyboard */,
 				CD7C4FDE1A9FE84D00A80C4F /* Images.xcassets */,
 				CD7C4FE01A9FE84D00A80C4F /* LaunchScreen.xib */,
@@ -223,7 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD7C4FDA1A9FE84D00A80C4F /* ViewController.swift in Sources */,
+				CD7C4FDA1A9FE84D00A80C4F /* AddViewController.swift in Sources */,
 				CD7C4FD81A9FE84D00A80C4F /* AppDelegate.swift in Sources */,
 				CD7C4FF81A9FF60F00A80C4F /* ListViewController.swift in Sources */,
 			);

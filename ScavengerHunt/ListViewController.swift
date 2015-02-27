@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class ListViewController: UITableViewController {
+    
     var itemsList = ["Cat", "Dog", "Moose"]
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -22,4 +23,5 @@ class ListViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return itemsList.count
     }
+    
 }
